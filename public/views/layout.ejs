@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title><%= title || 'ShopBloxFruit' %></title>
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div class="header">
+<h1 class="neon">ShopBloxFruit</h1>
+<p>Giao diện dark — giống phong cách PVM</p>
+</div>
+<div class="container">
+<div class="topbar">
+<div><a href="/" class="btn">Trang chủ</a> <a href="/shop" class="btn">Shop Acc</a> <a href="/topup" class="btn">Nạp thẻ</a></div>
+<div>
+<% if (user) { %>
+<span class="balance">Số dư: <%= user.balance %> VNĐ</span>
+<a href="/logout" class="btn">Đăng xuất</a>
+<% } else { %>
+<a href="/login" class="btn">Đăng nhập</a>
+<% } %>
+</div>
+</div>
+<%- body %>
+</div>
+<div class="footer">© ShopBloxFruit - Mẫu code</div>
+</body>
+</html>
