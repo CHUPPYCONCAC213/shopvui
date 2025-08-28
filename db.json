@@ -1,0 +1,27 @@
+{
+"users": [
+{
+"id": "u1",
+"username": "customer",
+"passwordHash": "",
+"balance": 0
+}
+],
+"accounts": [
+{
+"id": "a1",
+"title": "BloxFruit - Max Stats",
+"desc": "Trái chính: Phantom, Level 250+",
+"price": 150000,
+"content": "user1:pass1"
+},
+{
+"id": "a2",
+"title": "BloxFruit - Good PK",
+"desc": "Trái: Flame, Level 180",
+"price": 90000,
+"content": "user2:pass2"
+}
+],
+"orders": []
+}
